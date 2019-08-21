@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <MXParallaxHeader/MXScrollView.h>
 #import <HMSegmentedControl/HMSegmentedControl.h>
 #import <MXPagerView/MXPagerView.h>
 #import <MXParallaxHeader/MXParallaxHeader.h>
@@ -216,6 +217,11 @@ typedef NS_ENUM(NSInteger, MXSegmentedControlPosition) {
  Data source instance that adopt the MXSegmentedPagerDataSource.
  */
 @property (nonatomic, weak) IBOutlet id<MXSegmentedPagerDataSource> dataSource;
+
+/**
+ The content view. cf. [MXParallaxHeader](https://cocoapods.org/pods/MXParallaxHeader)
+ */
+@property (nonatomic, readonly) MXScrollView *contentView;
 
 /**
  The segmented control. cf. [HMSegmentedControl](http://cocoadocs.org/docsets/HMSegmentedControl/1.5/) for customazation.
